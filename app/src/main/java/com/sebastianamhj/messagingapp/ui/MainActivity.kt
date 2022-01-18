@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val navController = rememberNavController()
-            AppTheme() {
+            AppTheme(darkTheme = isSystemInDarkTheme()) {
                 // A surface container using the 'background' color from the theme
                 Scaffold(bottomBar = { BottomNavigationBar(navController = navController)}) {
                     Navigation(navController)
