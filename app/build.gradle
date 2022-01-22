@@ -22,7 +22,7 @@ android {
     }
 
     buildTypes {
-        def appId = "messagingapplication-hndaa"  // Replace with proper Application ID
+        def appId = <Application-ID>  // Replace with proper Application ID
         debug {
             buildConfigField "String", "MONGODB_REALM_APP_ID", "\"${appId}\""
         }
